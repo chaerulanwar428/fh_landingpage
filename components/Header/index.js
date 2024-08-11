@@ -4,9 +4,11 @@ import Navbar from '../Navbar';
 
 export default function Header() {
   return (
-    <header className='header bg-navy'>
-      <Navbar />
+    // <header className=''>
+    <>
+    <Navbar />
       <Hero />
-    </header>
+      </>
+    // </header>
   );
 }

@@ -14,131 +14,46 @@ export default function Navbar() {
     return setToken(Cookies.get('token'));
   });
 
-  const handleLogout = () => {
-    console.log('click');
-    Cookies.remove('token');
-    router.push('/');
-  };
+
 
   return (
-    <nav className='container navbar navbar-expand-lg navbar-dark'>
-      <div className='container-fluid'>
-        <Link legacyBehavior href={'/'}>
-          <a className='navbar-brand'>
-            <img src='/images/logo.svg' alt='semina' />
+    <nav
+      className={ "sticky z-20 top-0 py-0 lg:py-2 text-white font-sans bg-[#3586ff] 2xl:py-2 flex items-center flex-wrap md:px-24"}>
+      <Link href="/">
+        <div className='flex items-center'>
+         <img
+         src="/images/logo_sekolah.png"
+         className='h-[50px]'
+         />
+         <p className='text-white font-sans p-2 text-xl'>Fathatul Hidayah</p>
+         </div>
+      </Link>
+      <div
+        className={`${
+          true ? "w-full inline-flex flex-grow" : "hidden"
+        } lg:inline-flex lg:flex-grow lg:w-auto`}>
+        <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto py-2 lg:py-0">
+          <Link href="/">
+              <p className="lg:inline-flex  lg:w-auto w-full px-3 xl:px-4 py-2.5 rounded text-white font-sans text-xs md:text-sm lg:text-sm xl:text-lg items-center justify-center  hover:text-white">
+                Beranda
+              </p>
+          </Link>
+
+          <Link href="/alamat" scroll={false}>
+              <p className="lg:inline-flex lg:w-auto w-full px-3 xl:px-4 py-2.5 rounded text-white font-sans text-xs md:text-sm lg:text-sm xl:text-lg items-center justify-center  hover:text-white">
+                Alamat
+              </p>
+          </Link>
+          <Link href="/daftar" scroll={false}>
+              <p className="lg:inline-flex lg:w-auto w-full px-3 xl:px-4 py-2.5 rounded text-white font-sans text-xs md:text-sm lg:text-sm xl:text-lg items-center justify-center  hover:text-white">
+                Daftar
+              </p>
+          </Link>
+          <a href="http://localhost:3001/">
+              <p className="lg:inline-flex lg:w-auto w-full px-3 xl:px-4 py-2.5 border-2 border-white rounded-lg text-white font-sans text-xs md:text-sm lg:text-sm xl:text-lg items-center justify-center  hover:text-white">
+                Login
+              </p>
           </a>
-        </Link>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNavAltMarkup'
-          aria-controls='navbarNavAltMarkup'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-          <div
-            className={`navbar-nav ${
-              router.pathname !== '/signin' ? 'mx-auto' : 'ms-auto'
-            } my-3 my-lg-0`}
-          >
-            <NavLink href={'/'}>Home</NavLink>
-            <NavLink href={'/browse'}>Browse</NavLink>
-            <NavLink href={'/stories'}>Stories</NavLink>
-            <NavLink href={'/about'}>About</NavLink>
-          </div>
-
-          {router.pathname !== '/signin' && (
-            <>
-              {token ? (
-                <div className='navbar-nav ms-auto'>
-                  <div className='nav-item dropdown d-flex flex-column flex-lg-row align-items-lg-center authenticated gap-3'>
-                    <span className='text-light d-none d-lg-block'>
-                      Hello, Shayna M
-                    </span>
-
-                    <a
-                      className='nav-link dropdown-toggle mx-0 d-none d-lg-block'
-                      href='#'
-                      id='navbarDropdown'
-                      role='button'
-                      data-bs-toggle='dropdown'
-                      aria-expanded='false'
-                    >
-                      <img src='/images/avatar.png' alt='semina' width='60' />
-                    </a>
-
-                    <a
-                      className='d-block d-lg-none dropdown-toggle text-light text-decoration-none'
-                      data-bs-toggle='collapse'
-                      href='#collapseExample'
-                      role='button'
-                      aria-expanded='false'
-                      aria-controls='collapseExample'
-                    >
-                      <img src='/images/avatar.png' alt='semina' width='60' />
-                    </a>
-
-                    <ul
-                      className='dropdown-menu'
-                      aria-labelledby='navbarDropdown'
-                    >
-                      <li>
-                        <Link legacyBehavior href={'/dashboard'}>
-                          <a className='dropdown-item'>Dashboard</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Settings
-                        </a>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Rewards
-                        </a>
-                      </li>
-                      <li onClick={() => handleLogout()}>
-                        <a className='dropdown-item'>Sign Out</a>
-                      </li>
-                    </ul>
-
-                    <div className='collapse' id='collapseExample'>
-                      <ul className='list-group'>
-                        <li>
-                          <a className='list-group-item' href='#'>
-                            Dashboard
-                          </a>
-                        </li>
-                        <li>
-                          <a className='list-group-item' href='#'>
-                            Settings
-                          </a>
-                        </li>
-                        <li>
-                          <a className='list-group-item' href='#'>
-                            Rewards
-                          </a>
-                        </li>
-                        <li onClick={() => handleLogout()}>
-                          <a className='list-group-item'></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className='d-grid'>
-                  <Link legacyBehavior href={'/signin'}>
-                    <a className='btn-navy'>Sign In</a>
-                  </Link>
-                </div>
-              )}
-            </>
-          )}
         </div>
       </div>
     </nav>

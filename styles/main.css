@@ -19,6 +19,9 @@
   font-weight: 500;
   color: #FFFFFF;
 }
+
+
+
 .btn-navy:hover {
   color: #FFFFFF;
 }
@@ -75,21 +78,7 @@
     margin: 0 30px;
   }
 }
-footer {
-  padding: 70px 0;
-}
-footer .footer-content {
-  -moz-column-gap: 150px;
-       column-gap: 150px;
-  row-gap: 48px;
-}
-footer .footer-content .footer-links {
-  font-size: 16px;
-}
-footer .footer-content .footer-links .title-links {
-  font-weight: 500;
-  color: #FFFFFF;
-}
+
 footer .footer-content .footer-links a {
   font-weight: 400;
   color: #A3A5AA;
@@ -240,8 +229,11 @@ footer .all-rights {
   -moz-text-fill-color: transparent;
 }
 
+
+
+
 .bg-navy {
-  background-color: #151A26;
+  background-color: #3586ff;
 }
 
 .title {
