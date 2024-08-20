@@ -30,7 +30,7 @@ export default function Stories() {
         <div className='w-full flex justify-around'>
               <div className='border-2 border-[#3586ff] rounded-lg w-[200px] h-[500px] flex flex-col p-2 overflow-hidden'>
               <div className='rounded-full w-[50px] mx-auto'>
-              <img src="images/testimoni.jpeg" />         
+              <img  className="rounded-full" src="images/testimoni.jpeg" />         
               </div>
               <div className='mx-auto'>
                 <p className='text-black font-sans'>
@@ -48,7 +48,7 @@ export default function Stories() {
             </div> 
               <div className='border-2 border-[#3586ff] rounded-lg w-[200px] h-[500px] flex flex-col p-2 overflow-hidden'>
               <div className='rounded-full w-[50px] mx-auto'>
-              <img src="images/testimoni.jpeg" />         
+              <img  className="rounded-full" src="images/testimoni.jpeg" />        
               </div>
               <div className='mx-auto'>
                 <p className='text-black font-sans'>
@@ -66,7 +66,7 @@ export default function Stories() {
             </div> 
               <div className='border-2 border-[#3586ff] rounded-lg w-[200px] h-[500px] flex flex-col p-2 overflow-hidden'>
               <div className='rounded-full w-[50px] mx-auto'>
-              <img src="images/testimoni.jpeg" />         
+              <img  className="rounded-full" src="images/testimoni.jpeg" />               
               </div>
               <div className='mx-auto'>
                 <p className='text-black font-sans'>
@@ -88,7 +88,7 @@ export default function Stories() {
         return (
           <div key={index} className='border-2 border-[#3586ff] rounded-lg w-[200px] h-[500px] flex flex-col p-2 overflow-hidden'>
             <div className='rounded-full w-[50px] mx-auto'>
-            <img src={`${process.env.NEXT_PUBLIC_API}/${item.image.name}`} />         
+            <img className='rounded-full' src={`${process.env.NEXT_PUBLIC_API}/${item.image.name}`} />         
             </div>
             <div className='mx-auto'>
               <p className='text-black font-sans'>

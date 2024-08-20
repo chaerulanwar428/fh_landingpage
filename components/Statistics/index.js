@@ -36,7 +36,7 @@ export default function Statistics() {
             <div className='w-[300px] h-[190px] overflow-hidden rounded-lg border-2 border-white hover:drop-shadow-lg transition-shadow duration-400 hover:scale-125'>
             <img src="images/galeri2.jpeg"/>
             </div>
-            <p className='flex justify-center text-black font-sans hover:hidden'>Hajatan</p>
+            <p className='flex justify-center text-black font-sans hover:hidden'>Khotmil quran</p>
           </div>
       </div>
       <div className="w-full flex space-x-10 justify-around ml-10">
@@ -44,7 +44,7 @@ export default function Statistics() {
             <div className='w-[300px] h-[190px] overflow-hidden rounded-lg border-2 border-white hover:drop-shadow-lg transition-shadow duration-400 hover:scale-125'>
             <img src="images/galeri3.jpeg"/>
             </div>
-            <p className='flex justify-center text-black font-sans hover:hidden'>Hajatan</p>
+            <p className='flex justify-center text-black font-sans hover:hidden'>LDKS</p>
           </div>
       </div>
       <div className="w-full flex space-x-10 justify-around ml-10">
@@ -52,7 +52,7 @@ export default function Statistics() {
             <div className='w-[300px] h-[190px] overflow-hidden rounded-lg border-2 border-white hover:drop-shadow-lg transition-shadow duration-400 hover:scale-125'>
             <img src="images/galeri4.jpeg"/>
             </div>
-            <p className='flex justify-center text-black font-sans hover:hidden'>Hajatan</p>
+            <p className='flex justify-center text-black font-sans hover:hidden'>Award silat</p>
           </div>
       </div>
       <div className="w-full flex space-x-10 justify-around ml-10">
@@ -60,7 +60,7 @@ export default function Statistics() {
             <div className='w-[300px] h-[190px] overflow-hidden rounded-lg border-2 border-white hover:drop-shadow-lg transition-shadow duration-400 hover:scale-125'>
             <img src="images/galeri5.jpeg"/>
             </div>
-            <p className='flex justify-center text-black font-sans hover:hidden'>Hajatan</p>
+            <p className='flex justify-center text-black font-sans hover:hidden'>ziarah</p>
           </div>
       </div>
       <div className="w-full flex space-x-10 justify-around ml-10">
@@ -68,7 +68,7 @@ export default function Statistics() {
             <div className='w-[300px] h-[190px] overflow-hidden rounded-lg border-2 border-white hover:drop-shadow-lg transition-shadow duration-400 hover:scale-125'>
             <img src="images/galeri6.jpeg"/>
             </div>
-            <p className='flex justify-center text-black font-sans hover:hidden'>Hajatan</p>
+            <p className='flex justify-center text-black font-sans hover:hidden'>Peresmian</p>
           </div>
       </div>
       </div>
