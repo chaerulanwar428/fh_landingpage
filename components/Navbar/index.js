@@ -49,7 +49,7 @@ export default function Navbar() {
                 Daftar
               </p>
           </Link>
-          <a href="https://admin-fh-zeta.vercel.app">
+          <a href="http://localhost:3001/">
               <p className="lg:inline-flex lg:w-auto w-full px-3 xl:px-4 py-2.5 border-2 border-white rounded-lg text-white font-sans text-xs md:text-sm lg:text-sm xl:text-lg items-center justify-center  hover:text-white">
                 Login
               </p>
